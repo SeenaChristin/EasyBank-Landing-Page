@@ -403,7 +403,7 @@ footer {
   color: hsl(136, 65%, 51%);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .toggle-btn {
     display: none;
   }
@@ -590,7 +590,32 @@ footer {
   }
 }
 
-@media screen and (min-width: 429px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    background-position: top -3rem right -33%;
+  }
+  .hero-header {
+    font-size: 2rem;
+  }
+  .hero-text {
+    margin: -7vh 0 0;
+  }
+  .feature-cards {
+    flex-wrap: wrap;
+  }
+  section.articles {
+    flex-wrap: wrap;
+    column-gap: 10%;
+  }
+  section.articles article {
+    flex-basis: 35%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 760px) {
+  .hero-header {
+    font-weight: 300;
+  }
+
   .hero-text {
     margin: -20% 0 0;
   }
